@@ -136,10 +136,19 @@ def try_methods():
       -- backward  100 units
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # DONE: 4. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     ###########################################################################
-
+def thickness1(man):
+    window = rg.TurtleWindow()
+    a_turtle = rg.SimpleTurtle()
+    a_turtle.pen = rg.Pen('brown', man)
+    a_turtle.forward(150)
+    a_turtle.left(90)
+    a_turtle.forward(50)
+    a_turtle.backward(100)
+    window.close_on_mouse_click()
+thickness1(5)
 
 ###############################################################################
 # IMPORTANT: Read the NOTE below before you try to implement the next function!
