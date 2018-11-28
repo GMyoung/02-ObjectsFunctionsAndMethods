@@ -84,8 +84,8 @@ def thickness1(man,woman):
     a_turtle.forward(100)
     b_turtle.backward(100)
     window.close_on_mouse_click()
-
-thickness1(20,'midnight blue')
+thickness1(10,'red')
+#alternative:thickness1(20,'midnight blue')
 
 ###############################################################################
 # TODO: 5.
