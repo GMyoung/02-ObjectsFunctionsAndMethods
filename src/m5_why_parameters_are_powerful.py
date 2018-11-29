@@ -33,8 +33,8 @@ def main():
     #draw_circles(rg.Point(113,762))
     #better_draw_circles(rg.Point(65,25),77
     better_draw_circles(rg.Point(21,45),22)
-    even_better_draw_circles(rg.Point(15,95),11,51,'light blue',61)
-    even_better_draw_circles(rg.Point(33,45),10,20,'red',16)
+    even_better_draw_circles(rg.Point(15,95),11,51,'red',61)
+    even_better_draw_circles(rg.Point(33,45),10,20,'green',16)
 
     window.update()
     window.close_on_mouse_click()
@@ -187,27 +187,27 @@ def better_draw_circles(point,increase):
 #
 ###############################################################################
 
-def even_better_draw_circles(point,increase,amount,colour,thickness):
+def even_better_draw_circles(aaa,eee,lol,kkkkk,bluhbluhbluh):
     """ An improved version of draw_circles, per the _TODO_ above. """
     # READ the above _TODO_ and then copy-paste code from better_circles here:
     turtle = rg.SimpleTurtle()
     turtle.pen_up()
-    turtle.go_to(point)
+    turtle.go_to(aaa)
     turtle.set_heading(0)  # Point "east" (towards the right)
 
-    for k in range(1,(amount+1)):  # k becomes 1, 2, 3, ... 10
+    for k in range(1,lol+1):  # k becomes 1, 2, 3, ... 10
 
         turtle.pen_up()
 
         # Go DOWN 15 pixels, ending up pointing east again
         turtle.right(90)
-        turtle.forward(increase)
+        turtle.forward(eee)
         turtle.left(90)
 
         turtle.pen_down()
-        turtle.pen.color = colour
-        turtle.pen.thickness = thickness
-        turtle.draw_circle(increase * k)  # Radius 15, 30, 45, 60, ...
+        turtle.pen.color = kkkkk
+        turtle.pen.thickness = bluhbluhbluh
+        turtle.draw_circle(eee * k)  # Radius 15, 30, 45, 60, ...
 
 
 ###############################################################################
