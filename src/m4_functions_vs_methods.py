@@ -126,6 +126,14 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
 
 
 def try_methods():
+    a_turtle = rg.SimpleTurtle()
+    a_turtle.pen = rg.Pen('brown', 5)
+    a_turtle.forward(150)
+    a_turtle.left(90)
+    a_turtle.forward(50)
+    a_turtle.backward(100)
+
+
     """
     Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
     that is 'brown' with thickness 5.
@@ -139,21 +147,18 @@ def try_methods():
     # DONE: 4. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     ###########################################################################
-def thickness1(man):
-    window = rg.TurtleWindow()
-    a_turtle = rg.SimpleTurtle()
-    a_turtle.pen = rg.Pen('brown', man)
-    a_turtle.forward(150)
-    a_turtle.left(90)
-    a_turtle.forward(50)
-    a_turtle.backward(100)
-    window.close_on_mouse_click()
-thickness1(5)
+
+
+
 
 ###############################################################################
 # IMPORTANT: Read the NOTE below before you try to implement the next function!
 ###############################################################################
 def try_functions():
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
+
     """
     Causes several SimpleTurtles to do the following:
      -- One jumps to (200, 100), then moves (while drawing) to (300, 30)
@@ -161,7 +166,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # DONE: 5. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #    NOTE: This function requires
@@ -171,10 +176,38 @@ def try_functions():
     ###########################################################################
 
 
+
 ###############################################################################
 # IMPORTANT: Read the NOTE below before you try to implement the next function!
 ###############################################################################
 def try_methods_and_functions():
+
+    my_turtle = rg.SimpleTurtle('turtle')
+    my_turtle.pen = rg.Pen('blue',5)
+    my_turtle.backward(150)
+    my_turtle.speed = 1
+    my_turtle.draw_square(100)
+    my_turtle.right(30)
+    my_turtle.draw_square(100)
+    my_turtle.right(30)
+    my_turtle.speed = 5
+    my_turtle.pen = rg.Pen('red',5)
+    for k in range(10):
+        my_turtle.draw_square(50)
+        my_turtle.right(15)
+    my_turtle.speed = 100
+    my_turtle.pen = rg.Pen('red',35)
+    for k in range(8):
+        my_turtle.draw_square(300)
+        my_turtle.left(60)
+    my_turtle.pen = rg.Pen('black',3)
+    my_turtle.backward(200)
+    my_turtle.draw_circle(30)
+    my_turtle.draw_square(50)
+
+
+
+
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
     that is 'blue' with thickness 5.
